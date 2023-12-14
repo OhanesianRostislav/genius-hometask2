@@ -1,0 +1,400 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+
+
+:root {
+  --color-primary-blue: #2b7fff;
+  --color-primary-dark-blue: #011c44;
+  --color-secodary-white: #fff;
+  --color-secondary-gray: #4a4a4a;
+  --color-secondary-black: #000;
+}
+
+/* Base */
+*,
+*,
+::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h1,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+section {
+  padding: 48px 0;
+}
+
+.container {
+  max-width: 1304px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 32px;
+}
+
+a {
+  display: inline-block;
+}
+
+/* Links */
+.link {
+  color: var(--color-primary-dark-blue);
+  text-decoration: none;
+}
+
+.footer-link {
+  color: var(--color-secodary-white);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-blue);
+}
+
+.link:hover {
+  color: var(--color-primary-blue);
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+  height: 106px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-media {
+  display: flex;
+  gap: 32px;
+  justify-content: right;
+}
+
+.header-icon {
+  fill: var(--color-primary-dark-blue);
+}
+
+/* Hero section */
+.hero-text {
+  color: var(--color-primary-dark-blue);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.hero-title {
+  color: var(--color-primary-blue);
+  font-size: 140px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.hero-text-2 {
+  font-size: 12px;
+  color: var(--color-secondary-gray);
+  margin-bottom: 0;
+  padding: 14px;
+}
+
+.hero-container {
+  background-image: url(../images/operation.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Button */
+.button {
+  background-color: var(--color-primary-blue);
+  border-radius: 32px;
+  color: var(--color-secodary-white);
+  cursor: pointer;
+  border: solid var(--color-primary-blue);
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--color-primary-dark-blue);
+}
+
+/* Transform section */
+.transform-section {
+  color: var(--color-primary-dark-blue);
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.transform-section .accent {
+  color: var(--color-primary-blue);
+}
+
+.transform-text-1 {
+  font-size: 22px;
+  color: var(--color-primary-dark-blue);
+  margin-bottom: 40px;
+}
+
+.transform-text-2 {
+  font-size: 22px;
+  color: var(--color-primary-dark-blue);
+  margin-bottom: 0;
+}
+
+.transform-accent {
+  font-weight: 600;
+}
+
+.transform-container {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.transform-content {
+  max-width: 710px;
+}
+
+/* Why we section */
+.why-we {
+  color: var(--color-primary-dark-blue);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.why-we .accent {
+  color: var(--color-primary-blue);
+}
+
+.why-we-text {
+  color: var(--color-secondary-black);
+  font-size: 18px;
+  padding: 24px 32px;
+}
+
+.why-we-card {
+  border: 1px solid lightgrey;
+  border-radius: 32px;
+  align-items: center;
+}
+
+.why-we-list {
+  display: flex;
+  gap: 55px;
+}
+
+.why-we-icon {
+  fill: var(--color-primary-blue);
+}
+
+
+/* Our procedures */
+.our-procedures {
+  color: var(--color-primary-dark-blue);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 48px;
+
+}
+
+.our-procedures .accent {
+  color: var(--color-primary-blue);
+}
+
+.our-procedures-text {
+  /* color: var(--color-secodary-white); */
+  font-size: 22px;
+}
+
+.our-procedures-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.our-procedures-item {
+  border: 1px solid lightgrey;
+  border-radius: 120px 4px;
+  height: 345px;
+  width: 460px;
+  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, var(--color-primary-dark-blue) 101.39%);
+  width: 344px;
+  height: 456px;
+}
+
+.our-procedures-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Carousel */
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark-blue);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: var(--color-primary-dark-blue);
+  flex-shrink: 0;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-blue);
+  fill: var(--color-secodary-white);
+}
+
+
+/* Contacts */
+.contacts {
+  color: var(--color-primary-dark-blue);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.contacts-text {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* color: var(--color-secodary-white); */
+}
+
+.contacts-text .accent,
+.contacts .accent {
+  color: var(--color-primary-blue);
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contacts-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px
+}
+
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-primary-dark-blue);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+}
+
+.save-zone {
+  font-size: 13px;
+  color: var(--color-secondary-gray);
+}
+
+.contacts {
+  color: var(--color-primary-dark-blue);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.contacts .accent {
+  color: var(--color-primary-blue);
+}
+
+.media-footer {
+  fill: var(--color-secodary-white);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+
+}
+
+.footer-address,
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-menu,
+.footer-logo {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
